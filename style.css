@@ -1,0 +1,91 @@
+body {
+  background-color: #7ac0e9a1;
+}
+form {
+  border-radius: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 20px;
+  background-color: aliceblue;
+}
+
+#title,
+#description {
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  /* display: block; */
+}
+
+div {
+  padding: 10px;
+}
+
+input {
+  border: 0.5px solid gray;
+  padding: 5px;
+}
+
+* {
+  font-family: "Manjari", sans-serif;
+}
+
+button {
+  height: 30px;
+  width: 71px;
+  background: #3f5ea0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 10px;
+}
+select {
+  display: block;
+  margin-top: 10px;
+  width: 59px;
+  height: 25px;
+}
+
+textarea {
+  display: block;
+  height: 50px;
+  width: 60%;
+  margin-top: 10px;
+}
+
+#name,
+#email,
+#number {
+  margin-left: 10px;
+}
+
+#number {
+  width: 150px;
+}
+p {
+  font-weight: bold;
+}
+#name,
+#email {
+  width: 60%;
+}
+
+@media screen and (max-width: 480px) {
+  #name,
+  #email,
+  #number {
+    margin-left: -20px;
+  }
+  #name,
+  #email {
+    display: block;
+    width:90%;
+  }
+
+  div {
+    text-align: left;
+  }
+}
