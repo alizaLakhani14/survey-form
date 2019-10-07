@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Manjari:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">Customer Feedback Survey</h1>
+    <p id="description">Please let us know about your experience with our product and service.</p>
+    <form id="survey-form">
+        <div>
+            <label id="name-label" for="name">Name</label>
+            <input type="text" placeholder="Enter Your name" id="name" required>
+        </div>
+        <div>
+            <label for="email" id="email-label">E-mail</label>
+            <input type="email" id="email" placeholder="Enter Your email address" required>
+        </div>
+        <div>
+            <label for="number" id="number-label"> Contact Number</label>
+            <input type="number" id="number" min="0" max="9" placeholder="Contact Number" required>
+        </div>
+        <div>
+            <label for="dropdown">Is this the first time you are using our Products and services?
+            </label>
+            <select id="dropdown" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div>
+            <p>Would you recommend it to your friends and colleagues?</p>
+            <div>
+                <input type="radio" name="recommendation" value="Yes" required>
+                <label>Yes</label>
+
+            </div>
+            <div>
+                <input type="radio" name="recommendation" value="No" required>
+                <label>No</label>
+            </div>
+
+        </div>
+        <div>
+            <p>What do you like most about our product?</p>
+            <div>
+                <input type="checkbox" value="service" required>
+                <label>Service</label>
+
+            </div>
+            <div>
+                <input type="checkbox" value="price" required>
+                <label>Price</label>
+
+            </div>
+            <div>
+                <input type="checkbox" value="quality" required>
+                <label>Quality</label>
+
+            </div>
+        </div>
+        <div>
+
+            <label>Do you have any suggestions to improve our product and service?</label>
+            <textarea required rows="3" cols="80">Your suggestions</textarea>
+        </div>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
